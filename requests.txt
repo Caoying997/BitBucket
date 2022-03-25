@@ -9,7 +9,27 @@
 
 ###Reproducing results
 Dataset  UMLS
-$python36   main.py --data ./data/UMLS/ --epochs_gat 1000 --epochs_conv 300 --weight_decay_gat 0.00001 --margin 1 --out_channels 50 --drop_conv 0.3 --weight_decay_conv 0.000001 --batch_size_conv 256 --output_folder ./checkpoints/umls/out/
+$python36   
+main.py --data 
+./data/UMLS/ 
+--epochs_gat 1000 
+--epochs_conv 300 
+--weight_decay_gat 0.00001 
+--margin 1 --out_channels 50 
+--drop_conv 0.3 
+--weight_decay_conv 0.000001 
+--batch_size_conv 256 
+--output_folder ./checkpoints/umls/out/
 
 Dataset  WN18RR
-$python36   main.py --data ./data/WN18RR/ --epochs_gat 2000 --epochs_conv 260 --weight_decay_gat 0.00001 --margin 1 --out_channels 50 --drop_conv 0.5 --weight_decay_conv 0.000001 --batch_size_conv 256 --output_folder ./checkpoints/wn18rr/out/
+$python36   main.py 
+--data ./data/WN18RR/ 
+--epochs_gat 2000 
+--epochs_conv 260 
+--weight_decay_gat 0.00001 
+--margin 1 
+--out_channels 50 
+--drop_conv 0.5 
+--weight_decay_conv 0.000001 
+--batch_size_conv 256 
+--output_folder ./checkpoints/wn18rr/out/
