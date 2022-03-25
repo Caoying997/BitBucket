@@ -22,8 +22,7 @@ $python36   main.py
 --drop_conv 0.3 
 --weight_decay_conv 0.000001 
 --batch_size_conv 256 
---output_folder 
-./checkpoints/umls/out/
+--output_folder ./checkpoints/umls/out/
 
 Dataset  WN18RR
 $python36   main.py 
@@ -36,9 +35,8 @@ $python36   main.py
 --drop_conv 0.5 
 --weight_decay_conv 0.000001 
 --batch_size_conv 256 
---output_folder 
-./checkpoints/wn18rr/out/
+--output_folder ./checkpoints/wn18rr/out/
 
 ###Training  Parameters
-drop_GAT = {0.1,0.3，0.5}
-batch_size_conv ={128.256.512}
+drop_GAT = {0.1,0.3,0.5}
+batch_size_conv ={128.256,512}
